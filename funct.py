@@ -33,6 +33,7 @@ def show_todo(todo, filter_by=None):
 		pause_and_clear()
 		return
 	for i, todo in enumerate(todo, 1):
+		print("todo",i)
 		if filter_by and todo['status'] != filter_by:
 			continue
 		status = '✓' if todo['status'] == 'done' else ' '

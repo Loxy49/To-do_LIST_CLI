@@ -3,7 +3,6 @@ import funct as ft
 
 LIST = 'catatan.txt'
 
-
 os.system('cls')
 while True:
 	todo = ft.load_todo()
@@ -34,6 +33,7 @@ while True:
 	elif choice == '0':
 		print("Keluar dari program")
 		break
+
 	else:
 		print("Pilihan tidak valid.")
 		ft.pause_and_clear()
